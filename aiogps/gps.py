@@ -335,7 +335,7 @@ class GPS(GPSCommon, GPSData, GPSJson):
 			self.valid |= PACKET_SET
 		return 0
 
-	async def __aiter__(self):
+	def __aiter__(self):
 		return self
 
 	async def __anext__(self):
